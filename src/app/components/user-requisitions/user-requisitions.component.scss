@@ -1,0 +1,123 @@
+:host {
+    display: flex;
+    flex-flow: column wrap;
+    header {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        .button-std {
+            width: 87px;
+            height: 36px;
+        }
+    }
+    nav {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        padding: 16px 0px;
+    }
+    main {
+        .search-row {
+            display: flex;
+            flex-flow: column nowrap;
+            padding: 16px 0px;
+            span {
+                padding: 5px 0px;
+            }
+            .search-box-container {
+                display: flex;
+                flex-flow: row nowrap;
+                input[type="search"] {
+                    flex: 1;
+                    height: 40px;
+                    border-radius: 5px 0px 0px 5px;
+                    border: 1px solid #b7b7b7;
+                    font-family: 'Myriad Set Pro Text';
+                    font-size: 18px;
+                    color: #b7b7b7;
+                    padding: 5px 8px;
+                    outline: none;
+                    text-overflow: ellipsis;
+                }
+                button.search-btn {
+                    width: 42px;
+                    height: 40px;
+                    border-radius: 0px 5px 5px 0px;
+                }
+            }
+        }
+        .result-table-container {
+            padding: 12px 0px;
+            padding-bottom: 100px;
+            .meta-info {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                padding: 5px 0px;
+            }
+            .table {
+                display: flex;
+                flex-flow: column nowrap;
+                flex: 1;
+                .table-row {
+                    display: flex;
+                    flex-flow: row wrap; // justify-content: space-around;
+                    align-items: center;
+                    height: 100%;
+                    .column {
+                        width: 100%;
+                        flex: 0 1 auto;
+                        text-align: left;
+                        height: 100%;
+                        display: flex;
+                        flex-flow: column wrap;
+                        justify-content: center;
+                        &.check {
+                            text-align: center;
+                            align-items: center;
+                            width: 60px;
+                        }
+                        span {
+                            font-family: 'Myriad Set Pro Text';
+                            color: #333;
+                            font-size: 17px;
+                        }
+                    }
+                }
+                .table-header {
+                    height: 60px;
+                }
+                .table-header,
+                .table-body {
+                    display: flex;
+                    flex-flow: column nowrap; // justify-content: space-around;
+                    align-items: center;
+                    background-color: #f5f6f7;
+                    .table-row {
+                        height: 60px;
+                    }
+                }
+                .table-body {
+                    background-color: transparent;
+                }
+            }
+            .table {
+                .table-body {
+                    .table-row {
+                        border-bottom: 1px solid #b7b7b7;
+                    }
+                    .column-1 span {
+                        font-family: 'Myriad Set Pro Text';
+                        color: #479dd6 !important;
+                    }
+                    span {
+                        color: #6d6d6d !important;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

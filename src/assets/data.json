@@ -1,0 +1,82 @@
+[
+    {
+        "selected": false,
+        "title": "Senior User Experience Designer",
+        "reqID": "35608287",
+        "recName": "Johnny Appleseed",
+        "hireMgr": "Franklin Thompson",
+        "privacy": "Public"
+    },
+    {
+        "selected": false,
+        "title": "User Experience Tools Engineer",
+        "reqID": "39175994",
+        "recName": "Johnny Appleseed",
+        "hireMgr": "Tonya Kennedy",
+        "privacy": "Confidential"
+    },
+    {
+        "selected": false,
+        "title": "Sr. User Interface/Visual Designer",
+        "reqID": "39569202",
+        "recName": "Johnny Appleseed",
+        "hireMgr": "Isaac Adkins",
+        "privacy": "Public"
+    },
+    {
+        "selected": false,
+        "title": "Mail Senior User Interface Software Engineer",
+        "reqID": "46211371",
+        "recName": "Johnny Appleseed",
+        "hireMgr": "Neal Conner",
+        "privacy": "Public"
+    },
+    {
+        "selected": false,
+        "title": "Sr. User Interface/Visual Designer",
+        "reqID": "47212458",
+        "recName": "Johnny Appleseed",
+        "hireMgr": "Adam Sims",
+        "privacy": "Confidential"
+    },
+    {
+        "selected": false,
+        "title": "VP of User Experience",
+        "reqID": "35067165",
+        "recName": "Johnny Appleseed",
+        "hireMgr": "Tami Rios",
+        "privacy": "Confidential"
+    },
+    {
+        "selected": false,
+        "title": "User Experience Designer, Consumer Applications",
+        "reqID": "46857432",
+        "recName": "Johnny Appleseed",
+        "hireMgr": "Alexander Hanson",
+        "privacy": "Public"
+    },
+    {
+        "selected": false,
+        "title": "Sensor SW User Study Engineering Manager",
+        "reqID": "43621841",
+        "recName": "Johnny Appleseed",
+        "hireMgr": "Evan Webster",
+        "privacy": "Public"
+    },
+    {
+        "selected": false,
+        "title": "UI Prototyping Engineer",
+        "reqID": "47132120",
+        "recName": "Johnny Appleseed",
+        "hireMgr": "Stuart Roberson",
+        "privacy": "Public"
+    },
+    {
+        "selected": false,
+        "title": "UX Design Manager",
+        "reqID": "45687140",
+        "recName": "Johnny Appleseed",
+        "hireMgr": "Garry Blair",
+        "privacy": "Public"
+    }
+]

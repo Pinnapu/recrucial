@@ -1,0 +1,13 @@
+:host {
+    display: flex;
+    flex: 1;
+    height: 100vh;
+    overflow: auto;
+    .container {
+        position: relative;
+        width: 100%;
+        padding: 26px;
+        max-width: 930px;
+        margin: 0 auto;
+    }
+}

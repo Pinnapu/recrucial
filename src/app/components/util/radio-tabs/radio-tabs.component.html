@@ -1,0 +1,8 @@
+<div class="radio">
+  <ng-container *ngFor="let button of buttons;let index = index">
+    <label class="label button-std" (click)="selectedIndex = index" [class.active]="value === button.value && selectedIndex === index">
+      <input type="radio" [(ngModel)]="value" [value]="button.value" class="radio-std">
+      <span [innerHtml]="button.label"></span>
+    </label>
+  </ng-container>
+</div>

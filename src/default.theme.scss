@@ -1,0 +1,91 @@
+@import './assets/fonts/myriadpro/stylesheet';
+html,
+body,
+body * {
+    font-family: 'Myriad Set Pro';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility; // -webkit-text-stroke: 0.05px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-family: 'Myriad Set Pro Thin';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    color: #333;
+}
+
+.dark {
+    $color: #999999;
+    &.bg {
+        background-color: $color;
+        color: #ffffff;
+    }
+    &.color {
+        color: $color;
+    }
+}
+
+.medium {
+    $color: #b7b7b7;
+    &.bg {
+        background-color: $color;
+    }
+    &.color {
+        color: $color;
+    }
+}
+
+button,
+label {
+    font-family: 'Myriad Set Pro Text';
+    font-size: 15px;
+    border: none;
+    width: auto;
+    text-align: center;
+    min-width: 56px;
+    background-color: transparent;
+    color: #999999;
+    min-height: 28px;
+    padding: 3px;
+    &.button-std {
+        border: 1px solid #b7b7b7;
+        border-radius: 5px;
+        &.active {
+            color: #ffffff;
+            border: 1px solid #1279C9;
+            background: linear-gradient(to top, #1279C9, #439FE7);
+        }
+    }
+}
+
+button.close,
+div.close {
+    $width: 28px;
+    width: ($width)-8;
+    height: ($width)-7;
+    min-width: ($width)-8;
+    min-height: ($width)-7;
+    position: relative;
+    margin: 1px;
+    background-color: transparent;
+    cursor: pointer;
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        width: $width;
+        height: 1px;
+        top: ($width/2)-4;
+        left: -4px;
+        right: 0;
+        background-color: #333;
+    }
+    &::before {
+        transform: rotate(-45deg);
+    }
+    &::after {
+        transform: rotate(45deg);
+    }
+}

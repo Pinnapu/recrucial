@@ -1,0 +1,53 @@
+<header>
+  <div class="ele-1">
+    <button class="close"></button>
+  </div>
+  <h1 class="ele-2">Add Sarah Gutierrez to Requisition</h1>
+  <div class="ele-3">
+    <button class="button-std active">Next</button>
+  </div>
+</header>
+<nav>
+  <re-radio-tabs [buttons]="buttons" [(value)]="tab" (valueChange)="onValueChange($event)"></re-radio-tabs>
+</nav>
+<main>
+  <div class="search-row">
+    <span>Search for keywords</span>
+    <div class="search-box-container">
+      <input type="search" [(ngModel)]="searchText" placeholder="Search by Requisition Name, Requisition ID, Recruiter, Hiring Manager">
+      <button class="search-btn dark bg">
+        S
+      </button>
+    </div>
+  </div>
+  <div class="result-table-container" *ngIf="tab==='my'">
+    <div class="meta-info">
+      <span class="selected">{{selected}} Requisition{{selected !== 1 ? 's' : ''}} Selected</span>
+      <span class="total-results medium color" *ngIf="!!data && data.length">10 of {{data.length}} Results</span>
+    </div>
+    <div class="table">
+      <div class="table-header">
+        <div class="table-row">
+          <div class="column check">
+            <re-checkbox (valueChange)="selectAll($event)"></re-checkbox>
+          </div>
+          <div *ngFor="let column of columns;" [style.width]="column.width" class="column">
+            <span>{{column.label}}</span>
+          </div>
+        </div>
+      </div>
+      <div class="table-body" [@listAnimation]="getFilteredData().length">
+        <div class="table-row" *ngFor="let row of getFilteredData();let _index = index">
+          <div class="column check">
+           <!--// row {{_index+1}}-->
+            <re-checkbox [checked]="row.selected" (valueChange)="onValueChange(row.selected = $event)"></re-checkbox>
+          </div>
+          <div *ngFor="let col of getColumns(row);let index = index;" [style.width]="columns[index].width" class="column column-{{index+1}}">
+            <!--col {{index+1}}-->
+            <span>{{col}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

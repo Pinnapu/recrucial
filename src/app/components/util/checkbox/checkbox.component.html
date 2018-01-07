@@ -1,0 +1,11 @@
+<div class="checkbox">
+  <label class="label" [class.active]="!!checked" [@checkAnimation]="!!checked">
+    <input type="checkbox" #check [(ngModel)]="checked" class="checkbox-std">
+    <div class="handle">
+      <div class="check-mark">
+        <div class="before"></div>
+        <div class="after"></div>
+      </div>
+    </div>
+  </label>
+</div>

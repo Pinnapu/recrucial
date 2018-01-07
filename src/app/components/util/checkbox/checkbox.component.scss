@@ -1,0 +1,50 @@
+.checkbox {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    .checkbox-std {
+        display: none;
+    }
+    .label {
+        &.active {
+            .handle {
+                background-color: #1279C9;
+            }
+        }
+        min-width: 8px;
+        .check-mark {
+            height: 100%;
+        }
+        .handle {
+            cursor: pointer;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            border-radius: 3px;
+            border: 1px solid #b7b7b7;
+            background-color: #ffffff;
+            .before {
+                content: '';
+                position: absolute;
+                width: 30%;
+                bottom: 34%;
+                right: 50%;
+                transform: rotate(40deg);
+                height: 1px;
+                background-color: #ffffff;
+            }
+            .after {
+                content: '';
+                position: absolute;
+                width: 62%;
+                bottom: 45%;
+                left: 32%;
+                height: 1px;
+                background-color: #ffffff;
+                -webkit-transform: rotate(-60deg);
+                transform: rotate(-50deg);
+            }
+        }
+    }
+}
